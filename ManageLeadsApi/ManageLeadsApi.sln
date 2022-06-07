@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageLeadsApi", "ManageLeadsApi\ManageLeadsApi.csproj", "{7BECB6DD-850E-447B-98BF-60D541CE9490}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BECB6DD-850E-447B-98BF-60D541CE9490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BECB6DD-850E-447B-98BF-60D541CE9490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BECB6DD-850E-447B-98BF-60D541CE9490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BECB6DD-850E-447B-98BF-60D541CE9490}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0972AEC8-5BDA-4523-BC7A-EE0DCE8F0D9B}
+	EndGlobalSection
+EndGlobal
