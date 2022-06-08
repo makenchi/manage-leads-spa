@@ -192,6 +192,20 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "ManageLeadsApp/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ManageLeadsDomain": "1.0.0",
+          "ManageLeadsDomainCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ManageLeadsApp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManageLeadsApp.dll": {}
+        }
+      },
       "ManageLeadsDomain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -540,6 +554,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ManageLeadsApp/1.0.0": {
+      "type": "project",
+      "path": "../ManageLeadsApp/ManageLeadsApp.csproj",
+      "msbuildProject": "../ManageLeadsApp/ManageLeadsApp.csproj"
+    },
     "ManageLeadsDomain/1.0.0": {
       "type": "project",
       "path": "../ManageLeadsDomain/ManageLeadsDomain.csproj",
@@ -553,6 +572,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ManageLeadsApp >= 1.0.0",
       "ManageLeadsDomain >= 1.0.0",
       "ManageLeadsDomainCore >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.5"
@@ -590,6 +610,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsApp\\ManageLeadsApp.csproj": {
+              "projectPath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsApp\\ManageLeadsApp.csproj"
+            },
             "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomainCore\\ManageLeadsDomainCore.csproj": {
               "projectPath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomainCore\\ManageLeadsDomainCore.csproj"
             },

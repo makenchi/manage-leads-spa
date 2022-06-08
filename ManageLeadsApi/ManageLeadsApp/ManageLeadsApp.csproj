@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTO\" />
-    <Folder Include="Interfaces\" />
+    <ProjectReference Include="..\ManageLeadsDomainCore\ManageLeadsDomainCore.csproj" />
+    <ProjectReference Include="..\ManageLeadsDomain\ManageLeadsDomain.csproj" />
   </ItemGroup>
 
 </Project>
