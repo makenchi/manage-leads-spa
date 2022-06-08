@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Xoe+3AfVCKJb7dZ21PPNa0uVsR8YVyfD/1VPJWHOK/M88uVOBBFUsti2HAz8SLM9JHqRXloazntXKnTZlwIUXQ==",
+  "dgSpecHash": "KwkpsC5m46MinDASxZ8l509K3wZbOvr5UpWqUOVAXs3dbrP986dTeYRGcAlAsG4wOK9jEviwhnR+n/0QDLoQAQ==",
   "success": true,
   "projectFilePath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsInfra\\ManageLeadsInfra.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Makenchi\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Makenchi\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "C:\\Users\\Makenchi\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.5\\microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
     "C:\\Users\\Makenchi\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.5\\microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",

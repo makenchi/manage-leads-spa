@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Autofac/6.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "4.7.1"
+        },
+        "compile": {
+          "lib/net6.0/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.dll": {}
+        }
+      },
       "Microsoft.EntityFrameworkCore/6.0.5": {
         "type": "package",
         "dependencies": {
@@ -228,10 +240,44 @@
         "runtime": {
           "bin/placeholder/ManageLeadsDomainCore.dll": {}
         }
+      },
+      "ManageLeadsDomainServices/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ManageLeadsDomainCore": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ManageLeadsDomainServices.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManageLeadsDomainServices.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Autofac/6.4.0": {
+      "sha512": "tkFxl6wAPuwVhrlN8wuNADnd+k2tv4ReP7ZZSL0vjfcN0RcfC9v25ogxK6b03HC7D4NwWjSLf1G/zTG8Bw43wQ==",
+      "type": "package",
+      "path": "autofac/6.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "autofac.6.4.0.nupkg.sha512",
+        "autofac.nuspec",
+        "icon.png",
+        "lib/net5.0/Autofac.dll",
+        "lib/net5.0/Autofac.xml",
+        "lib/net6.0/Autofac.dll",
+        "lib/net6.0/Autofac.xml",
+        "lib/netstandard2.0/Autofac.dll",
+        "lib/netstandard2.0/Autofac.xml",
+        "lib/netstandard2.1/Autofac.dll",
+        "lib/netstandard2.1/Autofac.xml"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/6.0.5": {
       "sha512": "hP5J3EvpVdZmCn1D3ovedphvZrIn3OXZaBZfEnCkSCqqbqAu6xzwbNqwRkik0y4R6zOOf4eLh1riwjy4eAUlZA==",
       "type": "package",
@@ -568,13 +614,20 @@
       "type": "project",
       "path": "../ManageLeadsDomainCore/ManageLeadsDomainCore.csproj",
       "msbuildProject": "../ManageLeadsDomainCore/ManageLeadsDomainCore.csproj"
+    },
+    "ManageLeadsDomainServices/1.0.0": {
+      "type": "project",
+      "path": "../ManageLeadsDomainServices/ManageLeadsDomainServices.csproj",
+      "msbuildProject": "../ManageLeadsDomainServices/ManageLeadsDomainServices.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Autofac >= 6.4.0",
       "ManageLeadsApp >= 1.0.0",
       "ManageLeadsDomain >= 1.0.0",
       "ManageLeadsDomainCore >= 1.0.0",
+      "ManageLeadsDomainServices >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.5"
     ]
   },
@@ -616,6 +669,9 @@
             "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomainCore\\ManageLeadsDomainCore.csproj": {
               "projectPath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomainCore\\ManageLeadsDomainCore.csproj"
             },
+            "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomainServices\\ManageLeadsDomainServices.csproj": {
+              "projectPath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomainServices\\ManageLeadsDomainServices.csproj"
+            },
             "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomain\\ManageLeadsDomain.csproj": {
               "projectPath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsDomain\\ManageLeadsDomain.csproj"
             }
@@ -632,6 +688,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Autofac": {
+            "target": "Package",
+            "version": "[6.4.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.5, )"
