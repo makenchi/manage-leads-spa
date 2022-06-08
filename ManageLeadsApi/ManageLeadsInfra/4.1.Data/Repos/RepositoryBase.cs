@@ -1,4 +1,4 @@
-﻿using ManageLeadsDomainCore.Interfaces;
+﻿using ManageLeadsDomainCore.Interfaces.Repos;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

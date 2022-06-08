@@ -1,5 +1,5 @@
 ﻿using ManageLeadsDomain.Entities;
-using ManageLeadsDomainCore.Interfaces;
+using ManageLeadsDomainCore.Interfaces.Repos;
 using System;
 using System.Collections.Generic;
 using System.Linq;

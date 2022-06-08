@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManageLeadsDomainCore.Interfaces
+namespace ManageLeadsDomainCore.Interfaces.Repos
 {
-    public interface IRepositoryBase<TEntity> where TEntity : class 
+    public interface IRepositoryBase<TEntity> where TEntity : class
     {
         void Add(TEntity obj);
         void Update(TEntity obj);
         void Delete(TEntity obj);
         IEnumerable<TEntity> GetAll();
         TEntity GetById(int id);
-    }   
+    }
 }
