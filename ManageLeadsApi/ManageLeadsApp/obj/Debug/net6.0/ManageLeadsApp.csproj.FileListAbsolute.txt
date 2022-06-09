@@ -1,0 +1,17 @@
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsApp.deps.json
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsApp.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsApp.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsDomain.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsDomainCore.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsDomainCore.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\bin\Debug\net6.0\ManageLeadsDomain.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.csproj.AssemblyReference.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.GeneratedMSBuildEditorConfig.editorconfig
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.AssemblyInfoInputs.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.AssemblyInfo.cs
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.csproj.CoreCompileInputs.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.csproj.CopyComplete
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\refint\ManageLeadsApp.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ManageLeadsApp.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApp\obj\Debug\net6.0\ref\ManageLeadsApp.dll

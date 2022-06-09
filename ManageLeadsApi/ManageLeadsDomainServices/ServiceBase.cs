@@ -27,9 +27,9 @@ namespace ManageLeadsDomainServices
             _repositoryBase.Delete(obj);
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async IEnumerable<TEntity> GetAll()
         {
-            return _repositoryBase.GetAll();
+            return await _repositoryBase.GetAll();
         }
 
         public TEntity GetById(int id)

@@ -59,3 +59,9 @@ F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLead
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\obj\Debug\net6.0\ManageLeadsApi.pdb
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\obj\Debug\net6.0\ManageLeadsApi.genruntimeconfig.cache
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\obj\Debug\net6.0\ref\ManageLeadsApi.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\bin\Debug\net6.0\ManageLeadsApp.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\bin\Debug\net6.0\ManageLeadsDomain.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\bin\Debug\net6.0\ManageLeadsDomainCore.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\bin\Debug\net6.0\ManageLeadsApp.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\bin\Debug\net6.0\ManageLeadsDomain.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsApi\bin\Debug\net6.0\ManageLeadsDomainCore.pdb

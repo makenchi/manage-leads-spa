@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ManageLeadsDomainCore/1.0.0": {
+        "dependencies": {
+          "ManageLeadsDomain": "1.0.0"
+        },
+        "runtime": {
+          "ManageLeadsDomainCore.dll": {}
+        }
+      },
+      "ManageLeadsDomain/1.0.0": {
+        "runtime": {
+          "ManageLeadsDomain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ManageLeadsDomainCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ManageLeadsDomain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

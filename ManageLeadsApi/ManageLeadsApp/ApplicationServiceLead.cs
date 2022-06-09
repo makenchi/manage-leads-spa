@@ -35,7 +35,7 @@ namespace ManageLeadsApp
             _serviceLead.Delete(lead);
         }
 
-        public LeadDTO Get(int id)
+        public LeadDTO GetById(int id)
         {
             var lead = _serviceLead.GetById(id);
             return _mapperLead.MapperEntityToDto(lead);

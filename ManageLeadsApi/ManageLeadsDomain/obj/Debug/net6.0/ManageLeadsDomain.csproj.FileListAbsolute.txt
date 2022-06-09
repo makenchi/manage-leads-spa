@@ -1,0 +1,12 @@
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\bin\Debug\net6.0\ManageLeadsDomain.deps.json
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\bin\Debug\net6.0\ManageLeadsDomain.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\bin\Debug\net6.0\ManageLeadsDomain.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.csproj.AssemblyReference.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.AssemblyInfoInputs.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.AssemblyInfo.cs
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.csproj.CoreCompileInputs.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\refint\ManageLeadsDomain.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ManageLeadsDomain.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomain\obj\Debug\net6.0\ref\ManageLeadsDomain.dll

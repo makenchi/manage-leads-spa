@@ -1,0 +1,15 @@
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\bin\Debug\net6.0\ManageLeadsDomainCore.deps.json
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\bin\Debug\net6.0\ManageLeadsDomainCore.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\bin\Debug\net6.0\ManageLeadsDomainCore.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\bin\Debug\net6.0\ManageLeadsDomain.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\bin\Debug\net6.0\ManageLeadsDomain.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.csproj.AssemblyReference.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.GeneratedMSBuildEditorConfig.editorconfig
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.AssemblyInfoInputs.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.AssemblyInfo.cs
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.csproj.CoreCompileInputs.cache
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.csproj.CopyComplete
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\refint\ManageLeadsDomainCore.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ManageLeadsDomainCore.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainCore\obj\Debug\net6.0\ref\ManageLeadsDomainCore.dll

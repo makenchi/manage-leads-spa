@@ -13,6 +13,6 @@ namespace ManageLeadsApp.Interfaces
         void Update(LeadDTO leadDto);
         void Delete(LeadDTO leadDto);
         IEnumerable<LeadDTO> GetAll();
-        LeadDTO Get(int id);
+        LeadDTO GetById(int id);
     }
 }
