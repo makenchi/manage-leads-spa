@@ -1,4 +1,5 @@
 ﻿using ManageLeadsDomain.Entities;
+using ManageLeadsDomain.Entities.Enum;
 using ManageLeadsDomainCore.Interfaces.Repos;
 using ManageLeadsDomainCore.Interfaces.Services;
 using System;
@@ -21,6 +22,11 @@ namespace ManageLeadsDomainServices
         public async Task<Lead> GetLeadById(int id)
         {
             return await _repositoryLead.GetLeadById(id);
+        }
+
+        public async Task<List<Lead>> GetLeadByStatus(LeadStatus status)
+        {
+            return await _repositoryLead.GetLeadsByStatus(status);
         }
     }
 }

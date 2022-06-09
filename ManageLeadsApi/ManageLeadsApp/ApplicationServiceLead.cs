@@ -2,6 +2,7 @@
 using ManageLeadsApp.Interfaces;
 using ManageLeadsApp.Interfaces.Mapper;
 using ManageLeadsDomain.Entities;
+using ManageLeadsDomain.Entities.Enum;
 using ManageLeadsDomainCore.Interfaces.Services;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,12 @@ namespace ManageLeadsApp
         {
             var lead = _mapperLead.MapperDtoToEntity(leadDto);
             await _serviceLead.Update(lead);
+        }
+
+        public async Task<List<LeadDTO>> GetLeadsByStatus(LeadStatus status)
+        {
+            var leads = await _serviceLead.GetLeadByStatus(status);
+            return _mapperLead.MapperListLeadsDto(leads);
         }
     }
 }

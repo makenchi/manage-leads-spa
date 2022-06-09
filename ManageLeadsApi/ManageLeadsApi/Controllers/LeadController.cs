@@ -1,5 +1,6 @@
 using ManageLeadsApp.DTO;
 using ManageLeadsApp.Interfaces;
+using ManageLeadsDomain.Entities.Enum;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -26,6 +27,18 @@ namespace ManageLeadsApi.Controllers
         public async Task<IActionResult> GetById(int id)
         {
             return Ok(await _applicationServiceLead.GetById(id));
+        }
+
+        [HttpGet("status/{status}")]
+        public async Task<IActionResult> GetLeadsByStatus(LeadStatus status)
+        {
+            var leads = await _applicationServiceLead.GetLeadsByStatus(status);
+            if (leads.Count == 0)
+            {
+                return NotFound("There are no leads with this status.");
+            }
+
+            return Ok(leads);
         }
 
         [HttpPost]
@@ -81,20 +94,20 @@ namespace ManageLeadsApi.Controllers
             }
         }
 
-        [HttpDelete]
-        public async Task<IActionResult> Delete([FromBody] LeadDTO leadDto)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {
-                if (leadDto == null)
+                if (id == null)
                 {
                     return NotFound();
                 }
 
-                LeadDTO leadBase = await _applicationServiceLead.GetById(leadDto.Id);
+                LeadDTO leadBase = await _applicationServiceLead.GetById(id);
 
                 await _applicationServiceLead.Delete(leadBase);
-                return Ok(string.Format("Lead {0}-{1} deleted!", leadDto.Id, leadDto.FirstName));
+                return Ok(string.Format("Lead {0}-{1} deleted!", leadBase.Id, leadBase.FirstName));
             }
             catch (Exception ex)
             {
