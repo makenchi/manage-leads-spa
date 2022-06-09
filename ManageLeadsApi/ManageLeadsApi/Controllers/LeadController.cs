@@ -85,7 +85,7 @@ namespace ManageLeadsApi.Controllers
                 leadBase.Status = leadDto.Status == null ? leadBase.Status : leadDto.Status;
 
                 await _applicationServiceLead.Update(leadBase);
-                return Ok(string.Format("Lead {0}-{1} updated!", leadDto.Id, leadDto.FirstName));
+                return Ok(string.Format("Lead {0}-{1} updated!", leadBase.Id, leadBase.FirstName));
             }
             catch (Exception ex)
             {
@@ -94,7 +94,7 @@ namespace ManageLeadsApi.Controllers
             }
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("delete/{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             try
