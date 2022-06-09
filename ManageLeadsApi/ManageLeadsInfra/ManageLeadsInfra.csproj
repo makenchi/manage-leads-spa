@@ -7,16 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="4.2.CrossCutting\IOC\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ManageLeadsApp\ManageLeadsApp.csproj" />
     <ProjectReference Include="..\ManageLeadsDomainCore\ManageLeadsDomainCore.csproj" />
+    <ProjectReference Include="..\ManageLeadsDomainServices\ManageLeadsDomainServices.csproj" />
     <ProjectReference Include="..\ManageLeadsDomain\ManageLeadsDomain.csproj" />
   </ItemGroup>
 
