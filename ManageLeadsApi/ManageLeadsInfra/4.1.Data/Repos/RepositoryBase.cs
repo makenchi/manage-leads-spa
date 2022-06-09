@@ -45,9 +45,9 @@ namespace ManageLeadsInfra.Data.Repos
             }
         }
 
-        public async IEnumerable<TEntity> GetAll()
+        public IEnumerable<TEntity> GetAll()
         {
-            return await _sqlContext.Set<TEntity>().ToList();
+            return _sqlContext.Set<TEntity>().ToList();
         }
 
         public TEntity GetById(int id)
