@@ -17,29 +17,29 @@ namespace ManageLeadsDomainServices
             _repositoryBase = repositoryBase;
         }
 
-        public void Add(TEntity obj)
+        public async Task Add(TEntity obj)
         {
-            _repositoryBase.Add(obj);
+            await _repositoryBase.Add(obj);
         }
 
-        public void Delete(TEntity obj)
+        public async Task Delete(TEntity obj)
         {
-            _repositoryBase.Delete(obj);
+            await _repositoryBase.Delete(obj);
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<List<TEntity>> GetAll()
         {
-            return _repositoryBase.GetAll();
+            return await _repositoryBase.GetAll();
         }
 
-        public TEntity GetById(int id)
+        public async Task<TEntity> GetById(int id)
         {
-            return _repositoryBase.GetById(id);
+            return await _repositoryBase.GetById(id);
         }
 
-        public void Update(TEntity obj)
+        public async Task Update(TEntity obj)
         {
-            _repositoryBase.Update(obj);
+            await _repositoryBase.Update(obj);
         }
     }
 }

@@ -23,34 +23,34 @@ namespace ManageLeadsApp
             _mapperLead = mapperLead;
         }
 
-        public void Add(LeadDTO leadDto)
+        public async Task Add(LeadDTO leadDto)
         {
             Lead lead = _mapperLead.MapperDtoToEntity(leadDto);
-            _serviceLead.Add(lead);
+            await _serviceLead.Add(lead);
         }
 
-        public void Delete(LeadDTO leadDto)
+        public async Task Delete(LeadDTO leadDto)
         {
             var lead = _mapperLead.MapperDtoToEntity(leadDto);
-            _serviceLead.Delete(lead);
+            await _serviceLead.Delete(lead);
         }
 
-        public LeadDTO GetById(int id)
+        public async Task<LeadDTO> GetById(int id)
         {
-            var lead = _serviceLead.GetById(id);
+            var lead = await _serviceLead.GetById(id);
             return _mapperLead.MapperEntityToDto(lead);
         }
 
-        public IEnumerable<LeadDTO> GetAll()
+        public async Task<List<LeadDTO>> GetAll()
         {
-            var leads = _serviceLead.GetAll();
+            var leads = await _serviceLead.GetAll();
             return _mapperLead.MapperListLeadsDto(leads);
         }
 
-        public void Update(LeadDTO leadDto)
+        public async Task Update(LeadDTO leadDto)
         {
             var lead = _mapperLead.MapperDtoToEntity(leadDto);
-            _serviceLead.Update(lead);
+            await _serviceLead.Update(lead);
         }
     }
 }

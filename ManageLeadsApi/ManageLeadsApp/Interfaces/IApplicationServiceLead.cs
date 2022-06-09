@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace ManageLeadsApp.Interfaces
 {
-    public interface IApplicationServiceLead
+    public interface IApplicationServiceLead : IApplicationServiceBase<LeadDTO>
     {
-        void Add(LeadDTO leadDto);
-        void Update(LeadDTO leadDto);
-        void Delete(LeadDTO leadDto);
-        IEnumerable<LeadDTO> GetAll();
-        LeadDTO GetById(int id);
+
     }
 }

@@ -17,19 +17,19 @@ namespace ManageLeadsApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            return Ok(_applicationServiceLead.GetAll());
+            return Ok(await _applicationServiceLead.GetAll());
         }
 
         [HttpGet("{id}")]
-        public ActionResult GetById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return Ok(_applicationServiceLead.GetById(id));
+            return Ok(await _applicationServiceLead.GetById(id));
         }
 
         [HttpPost]
-        public ActionResult Post([FromBody] LeadDTO leadDto)
+        public async Task<IActionResult> Post([FromBody] LeadDTO leadDto)
         {
             try
             {
@@ -38,7 +38,7 @@ namespace ManageLeadsApi.Controllers
                     return NotFound();
                 }
 
-                _applicationServiceLead.Add(leadDto);
+                await _applicationServiceLead.Add(leadDto);
                 return Ok("Lead Inserted with success!");
             }
             catch (Exception ex)
@@ -49,7 +49,7 @@ namespace ManageLeadsApi.Controllers
         }
 
         [HttpPut]
-        public ActionResult Update([FromBody] LeadDTO leadDto)
+        public async Task<IActionResult> Update([FromBody] LeadDTO leadDto)
         {
             try
             {
@@ -58,7 +58,7 @@ namespace ManageLeadsApi.Controllers
                     return NotFound();
                 }
 
-                _applicationServiceLead.Update(leadDto);
+                await _applicationServiceLead.Update(leadDto);
                 return Ok(string.Format("Lead {0}-{1} updated!", leadDto.Id, leadDto.FirstName));
             }
             catch (Exception ex)
@@ -69,7 +69,7 @@ namespace ManageLeadsApi.Controllers
         }
 
         [HttpDelete]
-        public ActionResult Delete([FromBody] LeadDTO leadDto)
+        public async Task<IActionResult> Delete([FromBody] LeadDTO leadDto)
         {
             try
             {
@@ -78,7 +78,7 @@ namespace ManageLeadsApi.Controllers
                     return NotFound();
                 }
 
-                _applicationServiceLead.Delete(leadDto);
+                await _applicationServiceLead.Delete(leadDto);
                 return Ok(string.Format("Lead {0}-{1} deleted!", leadDto.Id, leadDto.FirstName));
             }
             catch (Exception ex)

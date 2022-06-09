@@ -17,12 +17,12 @@ namespace ManageLeadsInfra.Data.Repos
             _sqlContext = sqlContext;
         }
 
-        public void Add(TEntity obj)
+        public async Task Add(TEntity obj)
         {
             try
             {
-                _sqlContext.Set<TEntity>().Add(obj);
-                _sqlContext.SaveChanges();
+                await _sqlContext.Set<TEntity>().AddAsync(obj);
+                await _sqlContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -31,12 +31,12 @@ namespace ManageLeadsInfra.Data.Repos
             }
         }
 
-        public void Delete(TEntity obj)
+        public async Task Delete(TEntity obj)
         {
             try
             {
                 _sqlContext.Set<TEntity>().Remove(obj);
-                _sqlContext.SaveChanges();
+                await _sqlContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {
@@ -45,22 +45,22 @@ namespace ManageLeadsInfra.Data.Repos
             }
         }
 
-        public IEnumerable<TEntity> GetAll()
+        public async Task<List<TEntity>> GetAll()
         {
-            return _sqlContext.Set<TEntity>().ToList();
+            return await _sqlContext.Set<TEntity>().AsNoTracking().ToListAsync();
         }
 
-        public TEntity GetById(int id)
+        public async Task<TEntity> GetById(int id)
         {
-            return _sqlContext.Set<TEntity>().Find(id);
+            return await _sqlContext.Set<TEntity>().FindAsync(id);
         }
 
-        public void Update(TEntity obj)
+        public async Task Update(TEntity obj)
         {
             try
             {
-                _sqlContext.Entry(obj).State = EntityState.Modified;
-                _sqlContext.SaveChanges();
+                _sqlContext.Set<TEntity>().Update(obj);
+                await _sqlContext.SaveChangesAsync();
             }
             catch (Exception ex)
             {

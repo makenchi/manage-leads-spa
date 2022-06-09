@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ManageLeadsDomainCore.Interfaces.Services
+namespace ManageLeadsApp.Interfaces
 {
-    public interface IServiceBase<TEntity> where TEntity : class
+    public interface IApplicationServiceBase<TEntity> where TEntity : class
     {
         Task Add(TEntity obj);
         Task Update(TEntity obj);

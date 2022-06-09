@@ -8,10 +8,10 @@ namespace ManageLeadsDomainCore.Interfaces.Repos
 {
     public interface IRepositoryBase<TEntity> where TEntity : class
     {
-        void Add(TEntity obj);
-        void Update(TEntity obj);
-        void Delete(TEntity obj);
-        IEnumerable<TEntity> GetAll();
-        TEntity GetById(int id);
+        Task Add(TEntity obj);
+        Task Update(TEntity obj);
+        Task Delete(TEntity obj);
+        Task<List<TEntity>> GetAll();
+        Task<TEntity> GetById(int id);
     }
 }

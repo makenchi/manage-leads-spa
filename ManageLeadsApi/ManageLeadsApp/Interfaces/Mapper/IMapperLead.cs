@@ -11,7 +11,7 @@ namespace ManageLeadsApp.Interfaces.Mapper
     public interface IMapperLead
     {
         Lead MapperDtoToEntity(LeadDTO leadDto);
-        IEnumerable<LeadDTO> MapperListLeadsDto(IEnumerable<Lead> leads);
+        List<LeadDTO> MapperListLeadsDto(List<Lead> leads);
         LeadDTO MapperEntityToDto(Lead lead);
     }
 }

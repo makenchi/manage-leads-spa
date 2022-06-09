@@ -11,7 +11,7 @@ namespace ManageLeadsApp.Mapper
 {
     public class MapperLead : IMapperLead
     {
-        IEnumerable<LeadDTO> _leadDTOs = new List<LeadDTO>();
+        List<LeadDTO> _leadDTOs = new List<LeadDTO>();
 
         public Lead MapperDtoToEntity(LeadDTO leadDto)
         {
@@ -49,7 +49,7 @@ namespace ManageLeadsApp.Mapper
             return leadDTO;
         }
 
-        public IEnumerable<LeadDTO> MapperListLeadsDto(IEnumerable<Lead> leads)
+        public List<LeadDTO> MapperListLeadsDto(List<Lead> leads)
         {
             IEnumerable<LeadDTO> dto = leads.Select(l => new LeadDTO()
             {
@@ -64,7 +64,7 @@ namespace ManageLeadsApp.Mapper
                 Status = l.Status
             });
 
-            return dto;
+            return dto.ToList<LeadDTO>();
         }
     }
 }
