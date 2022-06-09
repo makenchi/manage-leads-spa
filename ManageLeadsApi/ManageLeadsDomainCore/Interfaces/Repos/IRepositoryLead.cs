@@ -9,5 +9,6 @@ namespace ManageLeadsDomainCore.Interfaces.Repos
 {
     public interface IRepositoryLead : IRepositoryBase<Lead>
     {
+        Task<Lead> GetLeadById(int id);
     }
 }

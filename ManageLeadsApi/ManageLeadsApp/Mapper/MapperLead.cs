@@ -1,6 +1,7 @@
 ﻿using ManageLeadsApp.DTO;
 using ManageLeadsApp.Interfaces.Mapper;
 using ManageLeadsDomain.Entities;
+using ManageLeadsDomain.Entities.Enum;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,12 +21,12 @@ namespace ManageLeadsApp.Mapper
                 Id = leadDto.Id,
                 FristName = leadDto.FirstName,
                 LastName = leadDto.LastName,
-                DateCreated = leadDto.DateCreated,
+                DateCreated = (DateTime)leadDto.DateCreated,
                 Suburb = leadDto.Suburb,
                 Category = leadDto.Category,
                 Description = leadDto.Description,
-                Price = leadDto.Price,
-                Status = leadDto.Status
+                Price = (decimal)leadDto.Price,
+                Status = (LeadStatus)leadDto.Status
             };
 
             return lead;

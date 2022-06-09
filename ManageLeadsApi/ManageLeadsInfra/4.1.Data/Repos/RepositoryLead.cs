@@ -1,5 +1,6 @@
 ﻿using ManageLeadsDomain.Entities;
 using ManageLeadsDomainCore.Interfaces.Repos;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +15,12 @@ namespace ManageLeadsInfra.Data.Repos
         public RepositoryLead(SqlContext sqlContext) : base(sqlContext)
         {
             _sqlContext = sqlContext;
+        }
+
+        public async Task<Lead> GetLeadById(int id)
+        {
+            Lead lead = await _sqlContext.Leads.AsNoTracking().FirstOrDefaultAsync(l => l.Id == id);
+            return lead;
         }
     }
 }

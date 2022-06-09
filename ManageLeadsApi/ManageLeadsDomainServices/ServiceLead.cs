@@ -17,5 +17,10 @@ namespace ManageLeadsDomainServices
         {
             _repositoryLead = repositoryLead;
         }
+
+        public async Task<Lead> GetLeadById(int id)
+        {
+            return await _repositoryLead.GetLeadById(id);
+        }
     }
 }

@@ -9,6 +9,5 @@ namespace ManageLeadsApp.Interfaces
 {
     public interface IApplicationServiceLead : IApplicationServiceBase<LeadDTO>
     {
-
     }
 }

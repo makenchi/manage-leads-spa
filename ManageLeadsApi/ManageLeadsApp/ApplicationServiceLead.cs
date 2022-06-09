@@ -37,7 +37,7 @@ namespace ManageLeadsApp
 
         public async Task<LeadDTO> GetById(int id)
         {
-            var lead = await _serviceLead.GetById(id);
+            var lead = await _serviceLead.GetLeadById(id);
             return _mapperLead.MapperEntityToDto(lead);
         }
 

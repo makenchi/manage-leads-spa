@@ -9,5 +9,6 @@ namespace ManageLeadsDomainCore.Interfaces.Services
 {
     public interface IServiceLead : IServiceBase<Lead>
     {
+        Task<Lead> GetLeadById(int id);
     }
 }

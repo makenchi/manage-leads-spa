@@ -21,6 +21,7 @@ namespace ManageLeadsInfra.Data
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(GetStringConnectionConfig());
+                optionsBuilder.UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking);
             }
 
             base.OnConfiguring(optionsBuilder);

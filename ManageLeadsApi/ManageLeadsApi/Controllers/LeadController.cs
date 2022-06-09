@@ -38,6 +38,8 @@ namespace ManageLeadsApi.Controllers
                     return NotFound();
                 }
 
+                leadDto.DateCreated = DateTime.Now; 
+
                 await _applicationServiceLead.Add(leadDto);
                 return Ok("Lead Inserted with success!");
             }
@@ -48,7 +50,7 @@ namespace ManageLeadsApi.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpPatch]
         public async Task<IActionResult> Update([FromBody] LeadDTO leadDto)
         {
             try
@@ -58,7 +60,18 @@ namespace ManageLeadsApi.Controllers
                     return NotFound();
                 }
 
-                await _applicationServiceLead.Update(leadDto);
+                LeadDTO leadBase = await _applicationServiceLead.GetById(leadDto.Id);
+
+                leadBase.Id = leadDto.Id == null ? leadBase.Id : leadDto.Id;
+                leadBase.FirstName = leadDto.FirstName == null ? leadBase.FirstName : leadDto.FirstName;
+                leadBase.LastName = leadDto.LastName == null ? leadBase.LastName : leadDto.LastName;
+                leadBase.Suburb = leadDto.Suburb == null ? leadBase.Suburb : leadDto.Suburb;
+                leadBase.Category = leadDto.Category == null ? leadBase.Category : leadDto.Category;
+                leadBase.Description = leadDto.Description == null ? leadBase.Description : leadDto.Description;
+                leadBase.Price = leadDto.Price == null ? leadBase.Price : leadDto.Price;
+                leadBase.Status = leadDto.Status == null ? leadBase.Status : leadDto.Status;
+
+                await _applicationServiceLead.Update(leadBase);
                 return Ok(string.Format("Lead {0}-{1} updated!", leadDto.Id, leadDto.FirstName));
             }
             catch (Exception ex)
@@ -78,7 +91,9 @@ namespace ManageLeadsApi.Controllers
                     return NotFound();
                 }
 
-                await _applicationServiceLead.Delete(leadDto);
+                LeadDTO leadBase = await _applicationServiceLead.GetById(leadDto.Id);
+
+                await _applicationServiceLead.Delete(leadBase);
                 return Ok(string.Format("Lead {0}-{1} deleted!", leadDto.Id, leadDto.FirstName));
             }
             catch (Exception ex)
