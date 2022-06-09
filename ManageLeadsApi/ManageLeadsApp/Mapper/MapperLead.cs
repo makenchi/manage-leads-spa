@@ -26,6 +26,8 @@ namespace ManageLeadsApp.Mapper
                 Category = leadDto.Category,
                 Description = leadDto.Description,
                 Price = (decimal)leadDto.Price,
+                Email = leadDto.Email,
+                Phone = leadDto.Phone,
                 Status = (LeadStatus)leadDto.Status
             };
 
@@ -44,6 +46,8 @@ namespace ManageLeadsApp.Mapper
                 Category = lead.Category,
                 Description = lead.Description,
                 Price = lead.Price,
+                Email = lead.Email,
+                Phone = lead.Phone,
                 Status = lead.Status
             };
 
@@ -62,6 +66,8 @@ namespace ManageLeadsApp.Mapper
                 Category = l.Category,
                 Description = l.Description,
                 Price = l.Price,
+                Email = l.Email,
+                Phone = l.Phone,
                 Status = l.Status
             });
 

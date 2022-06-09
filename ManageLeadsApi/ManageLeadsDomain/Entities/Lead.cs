@@ -16,8 +16,8 @@ namespace ManageLeadsDomain.Entities
         public string Category { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        //public string Email { get; set; }
-        //public string Phone { get; set; }
+        public string Email { get; set; }
+        public string Phone { get; set; }
         public LeadStatus Status { get; set; }
     }
 }

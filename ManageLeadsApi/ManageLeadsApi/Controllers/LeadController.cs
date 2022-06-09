@@ -82,6 +82,8 @@ namespace ManageLeadsApi.Controllers
                 leadBase.Category = leadDto.Category == null ? leadBase.Category : leadDto.Category;
                 leadBase.Description = leadDto.Description == null ? leadBase.Description : leadDto.Description;
                 leadBase.Price = leadDto.Price == null ? leadBase.Price : leadDto.Price;
+                leadBase.Email = leadDto.Email == null ? leadBase.Email : leadDto.Email;
+                leadBase.Phone = leadDto.Phone == null ? leadBase.Phone : leadDto.Phone;
                 leadBase.Status = leadDto.Status == null ? leadBase.Status : leadDto.Status;
 
                 await _applicationServiceLead.Update(leadBase);
