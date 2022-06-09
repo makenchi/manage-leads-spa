@@ -15,5 +15,21 @@ namespace ManageLeadsInfra.Data
         public SqlContext(DbContextOptions<SqlContext> options) : base(options) { }
 
         public DbSet<Lead> Leads { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer();
+            }
+
+            base.OnConfiguring(optionsBuilder);
+        }
+
+        private string GetStringConnectionConfig()
+        {
+            string strCon = "server=makenchi\\sqlexpress;database=manageleadsdb;trusted_connection=true";
+            return strCon;
+        }
     }
 }

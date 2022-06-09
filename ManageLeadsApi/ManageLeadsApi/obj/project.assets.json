@@ -762,7 +762,7 @@
           "ManageLeadsDomain": "1.0.0",
           "ManageLeadsDomainCore": "1.0.0",
           "ManageLeadsDomainServices": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.5"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5"
         },
         "compile": {
           "bin/placeholder/ManageLeadsInfra.dll": {}
