@@ -1,4 +1,12 @@
+using ManageLeadsApp;
+using ManageLeadsApp.Interfaces;
+using ManageLeadsApp.Interfaces.Mapper;
+using ManageLeadsApp.Mapper;
+using ManageLeadsDomainCore.Interfaces.Repos;
+using ManageLeadsDomainCore.Interfaces.Services;
+using ManageLeadsDomainServices;
 using ManageLeadsInfra.Data;
+using ManageLeadsInfra.Data.Repos;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -10,6 +18,10 @@ builder.Services.AddDbContext<SqlContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+builder.Services.AddScoped<IRepositoryLead, RepositoryLead>();
+builder.Services.AddScoped<IApplicationServiceLead, ApplicationServiceLead>();
+builder.Services.AddScoped<IServiceLead, ServiceLead>();
+builder.Services.AddScoped<IMapperLead, MapperLead>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
