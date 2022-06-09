@@ -29,7 +29,7 @@ namespace ManageLeadsInfra.Data
 
         private string GetStringConnectionConfig()
         {
-            string strCon = "server=makenchi\\sqlexpress;database=manageleadsdb;trusted_connection=true";
+            string strCon = "server=.\\sqlexpress;database=manageleadsdb;trusted_connection=true";
             return strCon;
         }
     }
