@@ -20,7 +20,7 @@ namespace ManageLeadsInfra.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer();
+                optionsBuilder.UseSqlServer(GetStringConnectionConfig());
             }
 
             base.OnConfiguring(optionsBuilder);
