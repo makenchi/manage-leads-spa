@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "fhAG1zKMFlX0DRisQby6ObhutVB7uLYW0mJK7iySipSlZ6TUjVde3+2/e8yl/sU+dQ1b3LwXfXEo3Ro+Aa5OTg==",
+  "dgSpecHash": "KeAUgCqgxps60K2n5d39Ys3qj7YBN0QWlDhtkRDfqSKFKoR/WuBPrjBofHJEbx1zC4HpWSRAzv3/Ss0wVnB2ug==",
   "success": true,
   "projectFilePath": "F:\\Makenchi's Dungeon\\Projetos\\GitHub\\manage-leads-spa\\ManageLeadsApi\\ManageLeadsApi\\ManageLeadsApi.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Makenchi\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\Makenchi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Makenchi\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Makenchi\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
