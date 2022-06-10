@@ -113,7 +113,7 @@ export function useLeads() {
     const data = await axios.get(API_URL).then(({ data }) => data);
     const allLeads = groupByStatus(
       data.map((it) => {
-        if (it.id === id) return { ...it, status: 1 };
+        if (it.id === id) return { ...it, status: 2 };
         return it;
       })
     );
