@@ -21,6 +21,7 @@ builder.Services.AddDbContext<SqlContext>(options =>
 builder.Services.AddScoped<IRepositoryLead, RepositoryLead>();
 builder.Services.AddScoped<IApplicationServiceLead, ApplicationServiceLead>();
 builder.Services.AddScoped<IServiceLead, ServiceLead>();
+builder.Services.AddScoped<IServiceEmail, ServiceEmail>();
 builder.Services.AddScoped<IMapperLead, MapperLead>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

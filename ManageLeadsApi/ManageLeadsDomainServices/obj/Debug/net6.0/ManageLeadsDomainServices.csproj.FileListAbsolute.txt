@@ -1,8 +1,10 @@
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomainServices.deps.json
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomainServices.dll
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomainServices.pdb
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsApp.dll
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomain.dll
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomainCore.dll
+F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsApp.pdb
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomainCore.pdb
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\bin\Debug\net6.0\ManageLeadsDomain.pdb
 F:\Makenchi's Dungeon\Projetos\GitHub\manage-leads-spa\ManageLeadsApi\ManageLeadsDomainServices\obj\Debug\net6.0\ManageLeadsDomainServices.csproj.AssemblyReference.cache
