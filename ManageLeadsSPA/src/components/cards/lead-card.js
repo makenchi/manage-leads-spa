@@ -8,7 +8,7 @@ import {
   Stack
 } from "@mui/material";
 
-export const LeadCard = ({ firstName, id, dateCreated, suburb, category, description, price, onAccept }) => (
+export const LeadCard = ({ firstName, id, dateCreated, suburb, category, description, price, onAccept, onDecline }) => (
   <Grid margin={1}>
     <Card>
       <CardHeader
@@ -36,7 +36,7 @@ export const LeadCard = ({ firstName, id, dateCreated, suburb, category, descrip
         <Button variant="contained" onClick={() => onAccept(id)}>
           Accept
         </Button>
-        <Button variant="outlined">Decline</Button>
+        <Button variant="outlined" onClick={() => onDecline(id)}>Decline</Button>
         <span>
           <b>$ {price}</b> Lead Invitation
         </span>

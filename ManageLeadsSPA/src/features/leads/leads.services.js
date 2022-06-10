@@ -77,10 +77,36 @@ export function useLeads() {
     await axios.patch(
       "https://localhost:7002/Lead",
       {
-        data: {
-          id,
-          status: 1
-        }
+        id,
+        status : 1
+      }
+    );
+
+    const data = await axios.get(API_URL).then(({ data }) => data);
+    const allLeads = groupByStatus(
+      data.map((it) => {
+        if (it.id === id) return { ...it, status: 1 };
+        return it;
+      })
+    );
+
+    setDisplayableLeads({
+      leadType: displayableLeads.leadType,
+      items: allLeads[TabType[displayableLeads.leadType]]
+    });
+
+    setLeads(allLeads);
+    setRequest({ loading: false, error: null });
+  }
+
+  async function declineLead(id) {
+    setRequest({ loading: true, error: null });
+
+    await axios.patch(
+      "https://localhost:7002/Lead",
+      {
+        id,
+        status : 2
       }
     );
 
@@ -105,6 +131,7 @@ export function useLeads() {
     leads: displayableLeads.items || [],
     toggleStatus,
     acceptLead,
+    declineLead,
     leadType: displayableLeads.leadType || 0,
     error: request.error,
     loading: request.loading

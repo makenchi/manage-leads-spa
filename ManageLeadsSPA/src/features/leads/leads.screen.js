@@ -45,6 +45,7 @@ export const LeadsScreen = () => {
     leads: data,
     toggleStatus,
     acceptLead,
+    declineLead,
     leadType
   } = useLeads();
 
@@ -56,6 +57,10 @@ export const LeadsScreen = () => {
     acceptLead(leadId);
   }
 
+  function handleBtnClickDcln(leadId) {
+    declineLead(leadId);
+  }  
+
   const Card = leadType === 0 ? LeadCard : LeadCardAccepted;
 
   return (
@@ -65,7 +70,7 @@ export const LeadsScreen = () => {
       {!loading &&
         data.map((it) => (
           <>
-            <Card {...it} onAccept={handleBtnClick} />
+            <Card {...it} onAccept={handleBtnClick} onDecline={handleBtnClickDcln} />
           </>
         ))}
     </Main>
