@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "firstName": "Peter",
+    "lastName": "Parker",
+    "dateCreated": "2022-06-09T05:28:33.915",
+    "suburb": "NY",
+    "category": "Super Hero",
+    "description": "Amazing",
+    "price": 2000,
+    "status": 0
+  },
+  {
+    "id": 3,
+    "firstName": "Luke",
+    "lastName": "Skywalker",
+    "dateCreated": "2022-06-09T18:07:25.4462056",
+    "suburb": "Tatooine",
+    "category": "The Last Jedi",
+    "description": "Use the force",
+    "price": 3000,
+    "status": 1
+  }
+]
