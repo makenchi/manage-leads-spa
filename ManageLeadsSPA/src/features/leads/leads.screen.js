@@ -65,7 +65,7 @@ export const LeadsScreen = () => {
       {!loading &&
         data.map((it) => (
           <>
-            <Card name={it.firstName} id={it.id} onAccept={handleBtnClick} />
+            <Card {...it} onAccept={handleBtnClick} />
           </>
         ))}
     </Main>

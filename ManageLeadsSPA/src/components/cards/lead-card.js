@@ -8,28 +8,28 @@ import {
   Stack
 } from "@mui/material";
 
-export const LeadCard = ({ name, id, onAccept }) => (
+export const LeadCard = ({ firstName, id, dateCreated, suburb, category, description, price, onAccept }) => (
   <Grid margin={1}>
     <Card>
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: "#fe7d2b" }} aria-label="recipe">
-            {name.substring(0, 1)}
+            {firstName.substring(0, 1)}
           </Avatar>
         }
-        title={name}
-        subheader="September 14, 2016"
+        title={firstName}
+        subheader={dateCreated}
       />
       <Divider />
       <Stack spacing={2} padding={1} direction="row" alignItems="center">
-        <span>Yandere 2574</span>
-        <span>Painters</span>
-        <span>Job Id: 557777</span>
+        <span>{suburb}</span>
+        <span>{category}</span>
+        <span>Job Id: {id}</span>
       </Stack>
 
       <Divider />
       <Grid padding={1}>
-        <p>ABC</p>
+        <p>{description}</p>
       </Grid>
       <Divider />
       <Stack spacing={2} padding={1} direction="row" alignItems="center">
@@ -38,7 +38,7 @@ export const LeadCard = ({ name, id, onAccept }) => (
         </Button>
         <Button variant="outlined">Decline</Button>
         <span>
-          <b>$ 49,00</b> Lead Invitation
+          <b>$ {price}</b> Lead Invitation
         </span>
       </Stack>
     </Card>
